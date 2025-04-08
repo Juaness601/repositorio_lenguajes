@@ -1,0 +1,78 @@
+ /* Reset básico y estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilos de la tarjeta */
+.card {
+    background: white;
+    width: 90%;
+    max-width: 300px;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+/* Imagen circular en esquina  */
+.card__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card__title {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    color: #333;
+}
+
+/* Botón fijo parte inferior */
+.card__button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.8rem 2rem;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card__button:hover {
+    background: #2980b9;
+    transform: translateX(-50%) scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+    .card {
+        width: 85%;
+        padding: 1.5rem;
+    }
+    .card__img {
+        width: 60px;
+        height: 60px;
+        top: -30px;
+        right: -30px;
+    }
+}

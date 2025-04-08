@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio de Juanes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* encabezado */
+header {
+    background-color: #15919B;
+    /* tamaño del encabezado */
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 2rem;
+    /* ancho máximo del encabezado */
+    max-width: 1200px;
+    /* centrar el encabezado */
+    margin: 0 auto;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    /* borde redondeado */
+    border-radius: 50%;
+    border: 2px solid white;
+    /* recortar la imagen */
+    object-fit: cover;
+    /* transición suave al pasar el mouse */
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: rotate(10deg);
+}
+
+/* Estilo del menú de navegación */
+nav {
+    background-color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.menu { 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* enlace del menú*/
+.menu li a {
+    text-decoration: none;
+    color: #15919B;
+    /* texto en negrita */
+    font-weight: bold;
+    /* espacio alrededor del texto */
+    padding: 8px 15px;
+    /* borde redondeado */
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #15919B;
+    color: white;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="imagenes/lufy.jfif" alt="Logo" class="logo">
+            Repositorio de Juanes
+        </h1>
+    </header>
+    
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Página de Inicio</a></li>
+            <li><a href="unidadesmedita.html">Unidades de Medida</a></li>
+            <li><a href="tarjetapresentacion.html">Tarjeta de Presentación</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

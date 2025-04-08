@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafío Position</title>
+    <style>
+        .contenedor {
+            width: 500px;
+            height: 500px;
+            background-color: #f0f0f0;
+            position: relative;
+            margin: 20px auto;
+            border: 2px dashed #333;
+        }
+        .caja {
+            width: 100px;
+            height: 100px;
+        }
+        .caja1 {
+            background-color: #FF4757;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .caja2 {
+            background-color: #2ED573;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        .caja3 {
+            background-color: #1E90FF;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja caja1"></div>
+        <div class="caja caja2"></div>
+        <div class="caja caja3"></div>
+    </div>
+     <!-- Agrega este botón justo antes de cerrar </body> -->
+<button class="card__boton--fixed">Leer más</button>
+</body>
+</html>
